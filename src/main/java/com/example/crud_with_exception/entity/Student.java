@@ -5,26 +5,25 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 @Entity
-@Table(name="StudentTable")
+@Table(name="Student")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-     @Column(name="rollnumber")
-    long rollNumber;
-    @Column(name="firstName")
+     @Column(name="roll_number")
+     int  rollNumber;
+    @Column(name="first_name")
     String firstName;
-    @Column(name="lastname")
+    @Column(name="last_name")
     String lastName;
     @Column(name="age")
     int age;
     @Column(name="email_id")
      String email_id;
-    @Column(name="phoneNumber")
-     long phoneNumber;
+    @Column(name="phone_number")
+     int phoneNumber;
  @Column(name="address")
      String address;
- @Column(name="registerTimeDate")
-     LocalDateTime registerTimeDate=LocalDateTime.of(2020,4,14,8,30,2);
-     @Column(name="dateofBirth")
-    LocalDate dateOfBirth=LocalDate.of(2003,4,3);
+ @Column(name="register_time_date")
+     LocalDateTime registerTimeDate;
+
 }

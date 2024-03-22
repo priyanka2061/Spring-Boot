@@ -8,8 +8,8 @@ import java.util.Optional;
 public interface StudentInterface  {
 
     Student addStudent(Student student);
-   Optional< Student> findStudentbyId(long id);
-    void deleteStudentById(long id);
+   Optional< Student> findStudentbyId(int id);
+    void deleteStudentById(int id);
     Student updateStudent(Student student);
     List<Student> getall();
 

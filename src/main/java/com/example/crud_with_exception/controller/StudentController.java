@@ -40,12 +40,12 @@ public class StudentController {
 
     //get all
     @GetMapping("/student/{id}")
-    Optional<Student> findStudentbyId( @PathVariable  long id) {
+    Optional<Student> findStudentbyId( @PathVariable  int id) {
         return studentInterface.findStudentbyId(id);
     }
 
     @DeleteMapping("/student/{id}")
-    public void deleteStudentById(@PathVariable long id) {
+    public void deleteStudentById(@PathVariable int id) {
         studentInterface.deleteStudentById(id);
     }
 }

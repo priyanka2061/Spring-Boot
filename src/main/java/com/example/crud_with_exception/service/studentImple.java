@@ -23,14 +23,14 @@ public class studentImple  implements StudentInterface{
     }
 
     @Override
-    public Optional<Student> findStudentbyId(long id) {
+    public Optional<Student> findStudentbyId(int id) {
 
 
         return  studentdoa.findById(id);
     }
 
     @Override
-    public void deleteStudentById(long id) {
+    public void deleteStudentById(int id) {
       studentdoa.deleteById(id);
     }
 
